@@ -1,0 +1,266 @@
+<!-- FOLDER STRUCTURE (for reference)
+index.html
+about.html
+contact.html
+login.html
+register.html
+assets/css/style.css
+assets/js/main.js
+-->
+
+<!-- ========================= index.html ========================= -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventure - Accueil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">EVENTURE</div>
+        <nav>
+            <a href="index.html" class="active">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html" class="btn-login">Connexion</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Club Eventure – Faculté des Sciences Juridiques et Économiques Ain Chock</h1>
+        <p>Créativité, organisation, média, art… Rejoins l'aventure !</p>
+        <a href="register.html" class="cta">Rejoindre le club</a>
+    </section>
+
+    <footer>
+        <p>© 2025 Eventure - Tous droits réservés</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+<!-- ========================= about.html ========================= -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Eventure</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">EVENTURE</div>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="about.html" class="active">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn-login">Connexion</a>
+    </nav>
+</header>
+
+<section class="page-section">
+    <h2>À propos du Club Eventure</h2>
+    <p>Eventure est un club artistique situé au sein de la Faculté des Sciences Juridiques, Économiques et Sociales d'Ain Chock. Il contient 4 départements : RH, Média, Événementiel et Artistique. Notre objectif est de créer un espace d'expression, d'organisation et de créativité pour les étudiants.</p>
+</section>
+
+<footer>
+    <p>© 2025 Eventure - Tous droits réservés</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+<!-- ========================= contact.html ========================= -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Eventure</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">EVENTURE</div>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="login.html" class="btn-login">Connexion</a>
+    </nav>
+</header>
+
+<section class="page-section">
+    <h2>Contactez-nous</h2>
+    <form class="form">
+        <input type="text" placeholder="Votre nom" required>
+        <input type="email" placeholder="Votre email" required>
+        <textarea placeholder="Votre message"></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 Eventure - Tous droits réservés</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+<!-- ========================= login.html ========================= -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Eventure</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<section class="auth-container">
+    <h2>Connexion</h2>
+    <form class="form">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Mot de passe" required>
+        <button type="submit">Se connecter</button>
+        <p>Pas de compte ? <a href="register.html">Créer un compte</a></p>
+    </form>
+</section>
+</body>
+</html>
+
+
+<!-- ========================= register.html ========================= -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Eventure</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<section class="auth-container">
+    <h2>Inscription</h2>
+    <form class="form">
+        <input type="text" placeholder="Nom complet" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Mot de passe" required>
+        <button type="submit">S'inscrire</button>
+        <p>Vous avez déjà un compte ? <a href="login.html">Se connecter</a></p>
+    </form>
+</section>
+</body>
+</html>
+
+
+<!-- ========================= style.css ========================= -->
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+}
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav a.active, nav a:hover {
+    color: gold;
+}
+.btn-login {
+    color: gold;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: gold;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 150px 20px;
+    background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') center/cover;
+}
+.hero h1 { font-size: 40px; }
+.hero p { font-size: 18px; margin-top: 10px; }
+.hero .cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* PAGE SECTION */
+.page-section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* FORMS */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+.form input, .form textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+}
+.form button {
+    background: gold;
+    color: black;
+    padding: 12px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* AUTH PAGES */
+.auth-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background: #111;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    margin-top: 40px;
+}
+
+
+<!-- ========================= main.js ========================= -->
+console.log("Eventure website loaded successfully!");

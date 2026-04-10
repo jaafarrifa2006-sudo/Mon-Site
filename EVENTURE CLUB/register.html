@@ -1,0 +1,94 @@
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Club Eventure • Inscription</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="brand" href="index.html"><img src="logo_ev_white-removebg-preview (1).png" alt="logo" width="260px"></a>
+</div>
+</header>
+
+<main class="container auth-page">
+<div class="auth-card glass">
+<div class="auth-header reveal">
+<h1 style="background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin:0 0 0.5rem 0">✨ Rejoins l'aventure</h1>
+<p style="color:#d4af37;font-size:0.9rem;margin:0;letter-spacing:0.5px">Crée ton compte pour participer aux événements du club</p>
+</div>
+
+<form id="registerForm" class="form" novalidate>
+<div class="form-row reveal reveal-delay-1">
+<label for="fullName">👤 Nom complet</label>
+<input id="fullName" name="fullname" type="text" placeholder="Prénom Nom" required>
+<span class="form-helper"></span>
+</div>
+
+<div class="form-row reveal reveal-delay-2">
+<label for="emailReg">📧 Email</label>
+<input id="emailReg" name="email" type="email" placeholder="ton.email@example.com" required>
+<span class="form-helper"></span>
+</div>
+
+<div class="form-row reveal reveal-delay-3">
+<label for="department">🎭 Département souhaité</label>
+<select id="department" name="department" required>
+<option value="">Choisir un département...</option>
+<option value="media">📸 Média</option>
+<option value="eventiel">🎪 Événementiel</option>
+<option value="artistique">🎨 Artistique</option>
+<option value="rh">👥 RH</option>
+</select>
+<span class="form-helper"></span>
+</div>
+
+<div class="form-row reveal reveal-delay-4">
+<label for="passwordReg">🔐 Mot de passe</label>
+<input id="passwordReg" name="password" type="password" placeholder="Min. 6 caractères" minlength="6" required>
+<span class="form-helper">Au moins 6 caractères</span>
+</div>
+
+<div class="form-actions reveal reveal-delay-5">
+<button class="btn" type="submit">🚀 Créer mon compte</button>
+</div>
+
+<p class="form-footer" style="text-align:center;color:#999;margin-top:1.5rem">
+Déjà membre ? <a href="login.html" style="color:#d4af37;text-decoration:none;font-weight:600;border-bottom:2px solid #d4af37;padding-bottom:2px">Se connecter</a>
+</p>
+
+<p id="registerFeedback" class="form-feedback" aria-live="polite"></p>
+</form>
+</div>
+</main>
+
+<footer class="site-footer">
+<div class="container footer-inner">
+<p>© <span id="year5"></span> Club Eventure — FSJES Ain Chock.</p>
+</div>
+</footer>
+
+<style>
+.auth-page{display:flex;align-items:center;justify-content:center;min-height:calc(100vh - 200px);padding:2rem 0}
+.auth-card{max-width:450px;width:100%;padding:2.5rem;border-radius:20px;animation:slide-up 0.8s cubic-bezier(0.25,0.46,0.45,0.94) forwards}
+.auth-header{text-align:center;margin-bottom:2rem;border-bottom:1px solid rgba(212,175,55,0.2);padding-bottom:1.5rem}
+.form-row{display:flex;flex-direction:column;gap:0.6rem;margin-bottom:1.5rem}
+.form-row label{font-weight:600;font-size:0.95rem;color:#f5f5f5;letter-spacing:0.3px}
+.form-row input,.form-row select{background:rgba(255,255,255,0.05);border:1.5px solid rgba(212,175,55,0.2);color:#998e28;padding:0.8rem 1rem;border-radius:10px;font-size:1rem;transition:var(--transition-smooth);font-family:inherit}
+.form-row input::placeholder,.form-row select::placeholder{color:rgba(245,213,71,0.5)}
+.form-row input:focus,.form-row select:focus{background:rgba(255,255,255,0.08);border-color:rgba(212,175,55,0.6);box-shadow:0 0 20px rgba(212,175,55,0.3),inset 0 0 10px rgba(212,175,55,0.1);outline:none}
+.form-helper{font-size:0.8rem;color:rgba(212,175,55,0.7);margin-top:-0.3rem;display:block}
+.form-actions{display:flex;gap:1rem;margin-top:2rem}
+.form-actions .btn{flex:1;padding:1rem;font-size:1rem;font-weight:600;border-radius:10px;transition:var(--transition-smooth)}
+.form-footer{font-size:0.9rem}
+.form-footer a:hover{text-shadow:0 0 10px rgba(212,175,55,0.6)}
+.form-feedback{text-align:center;margin-top:1rem;padding:0.8rem;border-radius:8px;font-size:0.9rem}
+.form-feedback.success{background:rgba(76,175,80,0.2);color:#4caf50;border:1px solid rgba(76,175,80,0.4)}
+.form-feedback.error{background:rgba(244,67,54,0.2);color:#f44336;border:1px solid rgba(244,67,54,0.4)}
+@media (max-width:600px){.auth-page{min-height:100vh}.auth-card{padding:1.5rem;margin:1rem}}
+</style>
+
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Club Eventure • Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="brand" href="index.html"><img src="logo_ev_white-removebg-preview (1).png" alt="logo" width="260px"></a>
+<nav class="main-nav" id="mainNav">
+<a href="index.html" class="nav-link">Accueil</a>
+<a href="about.html" class="nav-link">À propos</a>
+<a href="contact.html" class="nav-link">Contact</a>
+<a href="login.html" class="btn btn-outline nav-link-btn">Connexion</a>
+<a href="register.html" class="btn nav-link-btn">S'inscrire</a>
+</nav>
+<button class="nav-toggle" id="navToggle" aria-label="ouvrir le menu">☰</button>
+</div>
+</header>
+
+<main class="container contact-page">
+<div class="contact-header reveal">
+<h1 style="background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">📬 Reste en contact</h1>
+<p style="color:#d4af37;font-size:1rem;margin:0.5rem 0 0 0;line-height:1.6">Pour toute question, suggestion ou collaboration, écris-nous ci-dessous. On te répondra rapidement ! ⚡</p>
+</div>
+
+<div class="contact-container">
+<div class="contact-form-wrapper glass reveal reveal-delay-1">
+<h2 style="margin-top:0;color:#d4af37;font-size:1.3rem;margin-bottom:1.5rem">Envoie-nous un message</h2>
+
+<form id="contactForm" class="form" novalidate>
+<div class="form-row reveal reveal-delay-1">
+<label for="name">👤 Nom complet</label>
+<input id="name" name="name" type="text" placeholder="Ton nom complet" required>
+<span class="form-helper"></span>
+</div>
+
+<div class="form-row reveal reveal-delay-2">
+<label for="email">📧 Email</label>
+<input id="email" name="email" type="email" placeholder="ton.email@example.com" required>
+<span class="form-helper"></span>
+</div>
+
+<div class="form-row reveal reveal-delay-3">
+<label for="subject">📝 Sujet</label>
+<input id="subject" name="subject" type="text" placeholder="Sujet de ton message" required>
+<span class="form-helper"></span>
+</div>
+
+<div class="form-row reveal reveal-delay-4">
+<label for="message">💬 Message</label>
+<textarea id="message" name="message" rows="6" placeholder="Dis-nous ce qui t'intéresse ou tes suggestions..." required></textarea>
+<span class="form-helper">Sois précis pour qu'on te réponde au mieux</span>
+</div>
+
+<div class="form-actions reveal reveal-delay-5">
+<button class="btn" type="submit">✨ Envoyer le message</button>
+</div>
+
+<p id="contactFeedback" class="form-feedback" aria-live="polite"></p>
+</form>
+</div>
+
+<div class="contact-info-wrapper glass reveal reveal-delay-2">
+<h2 style="margin-top:0;color:#d4af37;font-size:1.3rem;margin-bottom:1.5rem">📍 Nos infos</h2>
+
+<div class="contact-info-item reveal reveal-delay-2">
+<h3 style="color:#d4af37;margin-top:0;display:flex;align-items:center;gap:0.5rem">🏢 Localisation</h3>
+<p style="margin:0.5rem 0;color:#f5f5f5">Faculté des Sciences Juridiques, Économiques et Sociales<br>Université Hassan II — Ain Chock<br>Casablanca, Maroc</p>
+</div>
+
+<div class="contact-info-item reveal reveal-delay-3">
+<h3 style="color:#d4af37;margin-top:0;display:flex;align-items:center;gap:0.5rem">📞 Téléphone</h3>
+<p style="margin:0.5rem 0;color:#f5f5f5"><a href="tel:+212654309723" style="color:#d4af37;text-decoration:none;border-bottom:2px solid #d4af37">+212 6 54 30 97 23</a></p>
+</div>
+
+<div class="contact-info-item reveal reveal-delay-4">
+<h3 style="color:#d4af37;margin-top:0;display:flex;align-items:center;gap:0.5rem">📧 Email</h3>
+<p style="margin:0.5rem 0;color:#f5f5f5"><a href="mailto:contact@eventure.example" style="color:#d4af37;text-decoration:none;border-bottom:2px solid #d4af37">contact@eventure.example</a></p>
+</div>
+
+<div class="contact-info-item reveal reveal-delay-5">
+<h3 style="color:#d4af37;margin-top:0;display:flex;align-items:center;gap:0.5rem">🕐 Heures</h3>
+<p style="margin:0.5rem 0;color:#f5f5f5">Lun-Ven: 9h - 17h<br>Samedi: Sur RDV<br>Dimanche: Fermé</p>
+</div>
+</div>
+</div>
+</main>
+
+<footer class="site-footer">
+<div class="container footer-inner">
+<p>© <span id="year6"></span> Club Eventure — FSJES Ain Chock.</p>
+</div>
+</footer>
+
+<style>
+.contact-page{padding:3rem 0}
+.contact-header{text-align:center;margin-bottom:3rem}
+.contact-header h1{margin:0 0 1rem 0;font-size:2.5rem}
+.contact-header p{max-width:600px;margin-left:auto;margin-right:auto}
+.contact-container{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem}
+.contact-form-wrapper{padding:2rem;border-radius:20px}
+.contact-info-wrapper{padding:2rem;border-radius:20px}
+.contact-info-item{padding:1.5rem;background:rgba(212,175,55,0.05);border-left:4px solid #d4af37;border-radius:8px;transition:var(--transition-smooth)}
+.contact-info-item:hover{background:rgba(212,175,55,0.1);transform:translateX(8px)}
+.contact-info-item a:hover{text-shadow:0 0 10px rgba(212,175,55,0.6)}
+.form-row{display:flex;flex-direction:column;gap:0.6rem;margin-bottom:1.5rem}
+.form-row label{font-weight:600;font-size:0.95rem;color:#f5f5f5;letter-spacing:0.3px}
+.form-row input,.form-row textarea,.form-row select{background:rgba(255,255,255,0.05);border:1.5px solid rgba(212,175,55,0.2);color:#f5f5f5;padding:0.8rem 1rem;border-radius:10px;font-size:1rem;transition:var(--transition-smooth);font-family:inherit}
+.form-row input::placeholder,.form-row textarea::placeholder,.form-row select::placeholder{color:rgba(245,213,71,0.5)}
+.form-row input:focus,.form-row textarea:focus,.form-row select:focus{background:rgba(255,255,255,0.08);border-color:rgba(212,175,55,0.6);box-shadow:0 0 20px rgba(212,175,55,0.3),inset 0 0 10px rgba(212,175,55,0.1);outline:none}
+.form-row textarea{resize:vertical}
+.form-helper{font-size:0.8rem;color:rgba(212,175,55,0.7);margin-top:-0.3rem;display:block}
+.form-actions{display:flex;gap:1rem;margin-top:2rem}
+.form-actions .btn{flex:1;padding:1rem;font-size:1rem;font-weight:600;border-radius:10px;transition:var(--transition-smooth)}
+.form-feedback{text-align:center;margin-top:1rem;padding:0.8rem;border-radius:8px;font-size:0.9rem}
+.form-feedback.success{background:rgba(76,175,80,0.2);color:#4caf50;border:1px solid rgba(76,175,80,0.4)}
+.form-feedback.error{background:rgba(244,67,54,0.2);color:#f44336;border:1px solid rgba(244,67,54,0.4)}
+@media (max-width:768px){
+.contact-container{grid-template-columns:1fr}
+.contact-form-wrapper,.contact-info-wrapper{padding:1.5rem}
+.contact-header h1{font-size:1.8rem}
+}
+</style>
+
+<script src="main.js"></script>
+</body>
+</html>
